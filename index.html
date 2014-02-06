@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Alpha algorithm</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<style type="text/css">
+@import "bootstrap/bootstrap.min.css";
+
+@import "css/default.css";
+</style>
+
+<script type="text/javascript" charset="utf-8" src="jquery/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="bootstrap/bootstrap.min.js"></script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+	href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+	href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+	href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+	href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+
+
+</head>
+
+<body>
+
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div id="" class="navbar-header">
+				<span class="navbar-brand"> <span id="title">Alpha algorithm </span></span>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h3>Logs</h3>
+			</div>
+			<div class="col-md-5">
+				<h3>Examples of logs</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="logs">
+
+					<form role="form">
+						<textarea id="input" class="form-control" rows="11" placeholder="Enter log traces..."></textarea>
+						<button type="button" id="btn-logs" class="btn btn-primary off-down">Submit</button>
+					</form>
+
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="well">
+					<ul class="list-group">
+						<li class="list-group-item">1. abef abecdbf abcedbf abcdebf aebcdbf</li>
+						<li class="list-group-item">2. abcdefbdceg abdceg abcdefbcdefbdceg</li>
+						<li class="list-group-item">3. acd bcd ace bce</li>
+						<li class="list-group-item">4. abcd acbd aed</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-0">
+				<div class="output">
+
+					<ul class="nav nav-tabs nav-justified">
+						<li id="output-tab" class="active"><a href="#" data-toggle="tab">Output</a></li>
+						<li id="model-tab"><a href="#">Model</a></li>
+					</ul>
+					<form role="form" id="output-form">
+						<textarea id="output" class="form-control" rows="30" val=""></textarea>
+					</form>
+					<div id="model-id">
+						<canvas id="viewport" width="1000" height="800"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery/jquery.js"></script>
+	<script src="arbor/arbor.js"></script>
+	<script src="arbor/arbor-tween.js"></script>
+	<script src="arbor/etc.js"></script>
+	<script src="arbor/graphics/colors.js"></script>
+	<script src="arbor/graphics/primitives.js"></script>
+	<script src="arbor/graphics/graphics.js"></script>
+	<script data-main="js/alpha.js" src="js/require.js"></script>
+</body>
+</html>
